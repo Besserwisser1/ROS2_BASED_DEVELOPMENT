@@ -1,7 +1,10 @@
 # ros2_nodes2
 
 ## Подготовка
+### Установка сборщика проектов colcon:
 
+    sudo apt install python3-colcon-common-extensions 
+    
 ### Установка ROS2
 
     sudo apt update && sudo apt install locales
@@ -23,21 +26,20 @@
 
 ### Настроил bash, добавив в .bashrc :
 
-Настрол работу с ROS2 в терминале:
+Настройка работы с ROS2 в терминале:
 
     source /opt/ros/humble/setup.sh
 
-Настроил автокомпиляцию с помощью сборщика в bashrc:
+Настройка работы с colcon с помощью сборщика в bashrc:
 
     source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
  
-Настроил работу с рабочим пространством
+Настрока работы с рабочим пространством
 
-    source /home/tr4in33/ros2_ws/install/setup.bash
+    source /home/$USER/ros2_ws/install/setup.bash
 
 
-### Исправил ошибку версий setuptools, заменив 59.6.0 на 58.2.0:
-
+### Исправление ошибки версий setuptools, заменив 59.6.0 на 58.2.0:
     pip3 install setuptools==58.2.0
 
 
