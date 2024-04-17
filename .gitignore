@@ -1,0 +1,8 @@
+.idea
+.vscode
+__pycache__
+*.bak
+*.rknn
+*.pt
+*.onnx
+detector/detector/rknn/*
