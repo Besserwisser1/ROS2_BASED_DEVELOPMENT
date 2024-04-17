@@ -57,10 +57,24 @@
 
 ### Запуск узлов
 
-Запуск узла камеры airplane_ros:
+Запуск узла телеметрии:
 
-	ros2 run airplane_ros flycam_cpp 
+	ros2 run telemetry_package telemetry_node
 
-Запуск узла затычки nodes_pool_py:
+Запуск узла приемника:
 
-	ros2 run nodes_pool_py subscriber_node
+	ros2 run sbus_receiver_package receiver_node
+
+Запуск узла переключателя:
+
+	ros2 run switch_package switch_node
+
+Запуск узла автопилота:
+
+	ros2 run autopilot_package autopilot_node
+
+Запуск узла передатчика:
+
+	ros2 run sbus_transmitter_package transmitter_node
+
+
